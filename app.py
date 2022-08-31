@@ -23,6 +23,9 @@ books = [
 @app.route("/")
 def main():
 	return "Welcome"
+@app.route("/ip")
+def ip():
+	return requests.get("https://api.myip.com").json()
 @app.route("/book")
 def api_id():
 	if 'id' in request.args:
