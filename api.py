@@ -1,10 +1,8 @@
 from flask import Flask, request, jsonify
-from flask_restful import Api, Resource
 import requests,os
 from datetime import *
 #os.system("clear")
 app = Flask(__name__)
-api = Api(app)
 books = [
     {'id': 0,
      'title': 'A Fire Upon the Deep',
